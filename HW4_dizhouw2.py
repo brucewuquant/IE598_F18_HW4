@@ -70,7 +70,7 @@ cols =  ['CRIM', 'ZN', 'INDUS', 'CHAS',
 
 corr_matrix = df.iloc[:, :-1].corr()
 print(corr_matrix)
-_ =sns.heatmap(corr,cbar=True,annot=False,square=True,fmt='.2f',
+_ =sns.heatmap(corr_matrix,cbar=True,annot=False,square=True,fmt='.2f',
                 annot_kws={'size':10},yticklabels=cols,
                 xticklabels=cols)
 
